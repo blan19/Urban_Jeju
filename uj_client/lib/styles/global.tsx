@@ -3,15 +3,32 @@ import { FC } from 'react';
 
 const styles = css`
   @font-face {
-    font-family: 'Jeju';
+    font-family: 'Gmaket Sans';
+    font-display: fallback;
+    src: url('./GmarketSansTTFBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Gmaket Sans';
+    font-display: fallback;
+    src: url('./GmarketSansTTFMedium.ttf') format('truetype');
     font-weight: 400;
-    src: url('/fonts/JejuMyeongjoOTF.otf') format('truetype');
     font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gmaket Sans';
+    font-display: fallback;
+    src: url('./GmarketSansTTFLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: light;
   }
   html,
   body {
     font-size: 62.5%;
-    font-family: -apple-system, Jeju, sans-serif;
+    font-family: -apple-system, Gmaket Sans, sans-serif;
     background: #ffffff;
     @media screen and (max-width: 1280px) {
       font-size: 56.25%;

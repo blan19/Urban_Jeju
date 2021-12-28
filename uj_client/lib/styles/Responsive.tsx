@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { FC } from 'react';
 
 const ResponsiveBlock = styled.div`
+  padding: 0 3rem;
   @media screen and (min-width: 1768px) {
     width: 1280px;
   }

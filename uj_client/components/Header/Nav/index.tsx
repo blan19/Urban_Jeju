@@ -56,6 +56,7 @@ const NavContainer = styled.ul`
 
 const NavHref = styled.a<{ location: boolean }>`
   cursor: pointer;
-  font-size: ${(props) => (props.location ? '3rem' : '2.5rem')};
+  font-size: 2.5rem;
+  font-weight: ${(props) => (props.location ? 'bold' : 'none')};
   color: ${(props) => (props.location ? '#4b6a49' : '#000')};
 `;

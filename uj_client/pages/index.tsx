@@ -1,13 +1,20 @@
 import React from 'react';
+import Responsive from '../lib/styles/Responsive';
 import { HomeContainer } from './styles';
 
 const index = () => {
   return (
     <HomeContainer>
-      <h1>
-        안녕하세요? 여우별입니다. 이 폰트는 제주 명조체입니다. 부드러운 감성을
-        주고 싶을 때
-      </h1>
+      <Responsive>
+        <div className="home-thumb">
+          <img src="/images/sky.png" alt="thumb.png" />
+          <div className="home-thumb-contents">
+            <h1>Order your</h1>
+            <h1>Daily Products</h1>
+            <p>#Fresh Products</p>
+          </div>
+        </div>
+      </Responsive>
     </HomeContainer>
   );
 };
